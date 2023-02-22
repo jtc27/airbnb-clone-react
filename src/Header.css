@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  /* display block is stacked, display flex is put in rows */
+
+  justify-content: space-between;
+  /* pushes components as far away from each other */
+
+  align-items: center;  
+  position: sticky;
+  top: 0;  
+  background-color: white;
+  z-index: 100;  /* covers everything */
+  width: 100%;
+}
+
+
+.header__icon {
+ object-fit: contain; /* keeps aspect ratio */
+  height: 100px;
+  margin-left: 20px;
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  /* flex 1 takes up as much space as possible */
+
+  max-width: fit-content;
+
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
+
+.header__center > input {
+  border: none;
+  /* width: 300px; */
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
+}
