@@ -36,6 +36,8 @@
 
 .header__center > input {
   border: none;
+  padding: 10px;
+  outline: none;
   /* width: 300px; */
 }
 
