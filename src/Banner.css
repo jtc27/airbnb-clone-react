@@ -1,18 +1,19 @@
 .banner {
   background: url('https://media.cntraveler.com/photos/63693207429b3d457f71bdda/16:9/w_2580,c_limit/Crested%20Butte_GettyImages-1334412902.jpg') center center;
   background-size: cover;
-  height: 50vh; /* 50 percent of the screen */
+  height: 35vh; /* 50 percent of the screen */
   position: relative;
 }
 
 .banner__info {
   background-color: black;
+  position: absolute;
+  height: 11vh;
   color: white;
-  padding-top: 25vh;
+  padding-top: 13vh;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  width: 300px;
+  padding-right: 100px;
+  padding-bottom: 60px;
 }
 
 .banner__search {

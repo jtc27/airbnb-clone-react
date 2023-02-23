@@ -16,14 +16,16 @@ function Banner() {
         onClick={() => setShowSearch(!showSearch)}
         variant='outlined'
         className='banner__searchButton'>
-          Search Dates
+          
+          {showSearch ? 'Collapse Calendar' : 'Search Dates'}
+
         </Button>
       </div>
 
       <div className='banner__info'>
         <h1>Explore the world</h1>
-        <h5>Get away and discover the world</h5>
-        <Button variant='outlined'>Explore Nearby</Button>
+        <h5>Find your next adventure</h5>
+        <Button variant='outlined'>Find Places Nearby</Button>
       </div>
     </div>
   )

@@ -2,6 +2,8 @@ import React from 'react'
 import './Search.css'
 import { useState } from 'react';
 import { addDays } from 'date-fns';
+import PeopleIcon from '@mui/icons-material/People'
+import { Button } from '@mui/material';
 
 // https://www.npmjs.com/package/react-date-range
 // also: npm i date-fns
@@ -28,6 +30,15 @@ function Search() {
         ranges={state}
         direction="horizontal"
       />
+      <h2>
+        Number of Guests
+        <PeopleIcon />
+        <input min={0}
+        defaultValue={2}
+        type='number'
+        />
+        <Button>Search MyBnb</Button>
+      </h2>
     </div>
   )
 }
