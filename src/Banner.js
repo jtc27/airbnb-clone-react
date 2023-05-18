@@ -3,8 +3,10 @@ import './Banner.css'
 import {Button} from "@mui/material"
 import { useState } from 'react'
 import Search from './Search'
+import {useNavigate} from 'react-router-dom'
 
 function Banner() {
+  const navigate = useNavigate()
   const [showSearch, setShowSearch] = useState(false)
 
   return (
@@ -25,7 +27,7 @@ function Banner() {
       <div className='banner__info'>
         <h1>Explore the world</h1>
         <h5>Find your next adventure</h5>
-        <Button variant='outlined'>Find Places Nearby</Button>
+        <Button variant='outlined' onClick={() => navigate('/search')}>Find Places Nearby</Button>
       </div>
     </div>
   )

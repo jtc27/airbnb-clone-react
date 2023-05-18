@@ -11,6 +11,8 @@ import { DateRangePicker } from 'react-date-range'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
+import { useNavigate } from 'react-router-dom';
+
 function Search() {
   const [state, setState] = useState([
     {
@@ -19,6 +21,7 @@ function Search() {
       key: 'selection'
     }
   ]);
+  const navigate = useNavigate()
 
   return (
     <div className='search'>
@@ -37,7 +40,7 @@ function Search() {
         defaultValue={2}
         type='number'
         />
-        <Button>Search MyBnb</Button>
+        <Button onClick={() => navigate('/search')}>Search MyBnb</Button>
       </h2>
     </div>
   )
