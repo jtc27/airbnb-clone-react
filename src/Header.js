@@ -6,12 +6,14 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Avatar } from '@mui/material'
 import { Link } from 'react-router-dom';
 
+import logo from './images/mybnb.png' 
+
 function Header() {
   return (
     <div className='header'>
       <Link to='/'>
         <img className='header__icon' 
-        src='https://sunny.fm/wp-content/uploads/2017/01/Synergy-Logo-shadow1-small-200px.png'
+        src={logo}
         alt='' 
         />
       </Link>
