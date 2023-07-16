@@ -2,13 +2,13 @@
 
 ## Deployed
 
-The app is deployed at [https://nba-players-react.vercel.app](https://nba-players-react.vercel.app)
+The app is deployed at [https://airbnb-clone-81d4a.web.app/](https://airbnb-clone-81d4a.web.app/)
 
 ## About this Project
 
-This is a search app for NBA players.  You can enter a player's name and look up their statistics.  In the picture below a search for "Curry" gives the following results.
+This is a search app for bnb and hotel stays.
 
-<img src="https://raw.githubusercontent.com/jtc27/nba-players-react/main/src/images/github-preview/a.png" height="400">
+<img src="src/images/mybnb-preview.png" height="400">
 
 For player profile images, this API was used: [https://github.com/iNaesu/nba-headshot-api](https://github.com/iNaesu/nba-headshot-api).  You may notice in the picture above only Stephen Curry and brother Seth Curry have photos available.  The other older "Currys" do not have photos available on this API.  When a player's picture is unavailable a generic default image is shown.
 
