@@ -1,71 +1,41 @@
-# Getting Started with Create React App
+# myBnb react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployed
 
-## Available Scripts
+The app is deployed at [https://nba-players-react.vercel.app](https://nba-players-react.vercel.app)
 
-In the project directory, you can run:
+## About this Project
 
-### `npm start`
+This is a search app for NBA players.  You can enter a player's name and look up their statistics.  In the picture below a search for "Curry" gives the following results.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://raw.githubusercontent.com/jtc27/nba-players-react/main/src/images/github-preview/a.png" height="400">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For player profile images, this API was used: [https://github.com/iNaesu/nba-headshot-api](https://github.com/iNaesu/nba-headshot-api).  You may notice in the picture above only Stephen Curry and brother Seth Curry have photos available.  The other older "Currys" do not have photos available on this API.  When a player's picture is unavailable a generic default image is shown.
 
-### `npm test`
+The headshot API was last updated for the 2017-2018 season, so some player images will not be current.  For example Lebron James is pictured below in a Cleveland Cavaliers uniform (2017), but as of now (2022) he is a member of the LA Lakers:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://raw.githubusercontent.com/jtc27/nba-players-react/main/src/images/github-preview/b.png" height="400">
 
-### `npm run build`
+Besides the photos, all player information is taken from the balldontlie API [https://www.balldontlie.io/](https://www.balldontlie.io/).  It contains player and team statistics from 1979 to the current season.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the picture above you can see Lebron James' personal statistics for the 2021-22 NBA season.  All of the player info was taken from the API, except PER.  (PER is shown in the orange badge; Lebron's is displayed as 25.35 PER)  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+PER (Player Efficiency Rating) is an NBA formula.  This formula takes all of the player's individual statistics and outputs a single value which marks how valuable he is.  It is a complex formula and I used a simplified version of it from here: [https://www.sportsbettingdime.com/guides/how-to/calculate-per/](https://www.sportsbettingdime.com/guides/how-to/calculate-per/).  In basketball PER is sometimes used as an argument for a player's overall value but its usefulness remains debatable. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There are limitations to the balldontlie API.  Data for players previous to the current generation seems to be nearly non-existent.  Tim Duncan (played 1997-2016) is one of the all-time great players who retired in 2016.  Yet he has no data on this API.  Neither are Michael Jordan (played 1984-2003) or Shaquille O'Neal (played 1992-2011), both iconic players who have no data on this API.  So while it is advertised as hosting data for players 1979-current, the data is relatively scant.
 
-### `npm run eject`
+<img src="https://raw.githubusercontent.com/jtc27/nba-players-react/main/src/images/github-preview/c.png" height="350">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Overall, for a free NBA API this one is quite decent and usable.  Perhaps in the future I can find a more complete data source and update my app.  I did enjoy using it and building this site, as there seems to be a scarcity of good APIs out there for NBA related data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# airbnb-clone-react
+| Dependencies  | Description |
+| ------------- | ------------- |
+|  [Tailwind](https://tailwindcss.com/)  | Tailwind CSS |
+|  [daisyUI](https://daisyui.com/)  | daisyUI  |
+|  [https://www.balldontlie.io/](https://www.balldontlie.io/)  | NBA player data  |
+|  [https://github.com/iNaesu/nba-headshot-api](https://github.com/iNaesu/nba-headshot-api)  | Player photos  |
+ 
