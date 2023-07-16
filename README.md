@@ -25,7 +25,7 @@ You can also "Find Places Nearby" which will list housing info and prices.
 
 | Dependencies  | Description |
 | ------------- | ------------- |
-|  React / React Router | library |
-|  Firebase | Data storage |
+|  React / React Router | Library |
+|  Firebase | Database & Deployment |
 |  [https://www.npmjs.com/package/react-date-range](https://www.npmjs.com/package/react-date-range)  | Date range selector  |
  
