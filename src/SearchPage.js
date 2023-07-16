@@ -26,7 +26,7 @@ function SearchPage() {
       total='$117 total'
     />
                 <SearchResult
-                img="https://www.expatkings.com/wp-content/uploads/2018/10/Airbnb-rental-tips.-Hostmaker-1-620x349.jpg"
+                img="https://cf.bstatic.com/xdata/images/hotel/max1024x768/383834719.jpg?k=a8ed632aeaf2eb621e6753e941d4fb2f858005614b603cdef5bfe644ce1a1906&o=&hp=1"
                 location="Private room in center of San Francisco"
                 title="Independant luxury studio apartment"
                 description="2 guest · 3 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen"
