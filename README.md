@@ -8,11 +8,11 @@ The app is deployed at [https://airbnb-clone-81d4a.web.app/](https://airbnb-clon
 
 This is a search app for bnb and hotel stays.
 
-<img src="src/images/mybnb-preview.png" height="300">
+<img src="src/images/mybnb-preview.png" height="350">
 
 If you click on the "Search Dates" bar a calendar will slide out.  The date range selector was developed at [https://www.npmjs.com/package/react-date-range](https://www.npmjs.com/package/react-date-range).  Click "Search MyBnb" to start a search.
 
-<img src="src/images/mybnb-preview.png1" height="300">
+<img src="src/images/mybnb-preview1.png" height="350">
 
 The headshot API was last updated for the 2017-2018 season, so some player images will not be current.  For example Lebron James is pictured below in a Cleveland Cavaliers uniform (2017), but as of now (2022) he is a member of the LA Lakers:
 
